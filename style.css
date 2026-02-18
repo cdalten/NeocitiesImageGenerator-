@@ -1,0 +1,87 @@
+/* 
+  I'm not aware of any sane and rational
+  way to scale up the images. So to solve
+  this issue, I prevent the images from
+  scaling up in the first place.
+   
+*/
+
+/*
+  Don't modify page-fix.
+*/
+
+/*
+  This steaming pile of crap was written
+  by me while under duress at UC Berkeley.
+*/
+
+.page-fix {
+  margin: 0px;
+  padding-bottom: 5px;
+ }
+
+body {
+  background-color: white;
+  font-family: Verdana; 
+  padding: 5px;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+
+/*
+ Causes image jump for more than 1 image.
+ 600px is the magic number where the image doesn't looked blurred when viewed from a laptop. I arrived at this number by getting drunk and then doing trial and error until it looked right.
+*/
+
+img {
+  width: 100%;
+  height: auto;
+  
+  /*
+display: block;
+  max-width: 325px;
+  max-height: 135px;
+  width: auto;
+  height: auto;
+  */
+  
+}
+table {
+      width: 100%; /* Table will take 100% of its parent's width */
+}
+    
+tr {
+  height: 50px; /* Sets all table rows to a height of 50 pixels */
+}
+
+a {
+  text-decoration: none;
+}
+
+.prevLink {
+  float: left;
+}
+
+.nextLink {
+  float: right;
+}
+
+.timeTaken {
+  float: right;
+}
+
+.contain {
+  object-fit: contain;
+}
+/*img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}*/
+
+/*Semantic crap*/
+
+/*.large-text {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+*/
